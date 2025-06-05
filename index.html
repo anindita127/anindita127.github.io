@@ -77,6 +77,9 @@
             </a>
           </li>
           <li>
+            <a href="#background" class="nav-link scrollTo"><i class="bx bx-layer"></i><span>Background</span></a>
+          </li>
+          <li>
             <a href="#bibliography" class="nav-link scrollTo"><i class="bx bx-file"></i><span>Selected Publications</span></a>
           </li>
           <li>
@@ -130,46 +133,158 @@
       </div>
 
       <!-- ======= Latest News Section ======= -->
-      <section id="news" class="facts section-bg">
+      <section id="news" class="facts">
         <div class="container">
-
           <div class="section-title">
             <h3>Latest News</h3>
           </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-              <div class="count-box">
-                <i class="bi bi-file-earmark-text"></i>
-                <p>
-                  <strong>[Upcoming] August 2025</strong>
-                  <br><strong>One paper</strong> at SIGGRAPH 2025
-                </p>
+          <div class="latest-news-notes" style="display: flex; gap: 18px; flex-wrap: wrap; margin-top: 18px;">
+            <div class="sticky-note news-card">
+              <div class="news-date">[Upcoming] August 2025</div>
+              <div class="news-title">SIGGRAPH 2025 Paper Accepted 🎉</div>
+              <div class="news-note">Collaboration with Snap Research, NY, USA</div>
+            </div>
+            <div class="sticky-note news-card">
+              <div class="news-date">June 2025</div>
+              <div class="news-title">CVPR 2025 Paper Accepted 🎉</div>
+              <div class="news-note">Collaboration with Purdue University 
+                <a href="https://ideas.cs.purdue.edu/research/projects/sim-motion-edit/" target="_blank" style="margin-left:4px; color:#5a4a1c;">
+                  <i class="bx bx-link" style="font-size:1.1em; vertical-align:middle;"></i>
+                </a>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-              <div class="count-box">
-                <i class="bi bi-file-earmark-text"></i>
-                <p>
-                  <strong>June 2025</strong>
-                  <br><strong>One paper</strong> at CVPR 2025
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-              <div class="count-box">
-                <i class="bi bi-file-earmark-text"></i>
-                <p>
-                  <strong>October 2024</strong>
-                  <br><strong>One paper</strong> at ECCV 2024
-                </p>
+            <div class="sticky-note news-card">
+              <div class="news-date">March 2025</div>
+              <div class="news-title">A survey on Human Interaction Motion Generation 📚</div>
+              <div class="news-note"> The repository is now public with 75+ ⭐ in
+                <a href="https://github.com/soraproducer/Awesome-Human-Interaction-Motion-Generation" target="_blank" style="margin-left:4px; color:#5a4a1c;">
+                  <i class="bx bxl-github" style="font-size:1.1em; vertical-align:middle;"></i>
+                </a>
               </div>
             </div>
             
+            <div class="sticky-note news-card">
+              <div class="news-date">October 2024</div>
+              <div class="news-title">ECCV 2024 Code Release 🎉</div>
+              <div class="news-note">Code and data for ReMoS is now available in
+                <a href="https://github.com/anindita127/ReMoS" target="_blank" style="margin-left:4px; color:#5a4a1c;">
+                  <i class="bx bxl-github" style="font-size:1.1em; vertical-align:middle;"></i></a></div>
+            </div>
           </div>
-
         </div>
       </section><!-- End Latest News Section -->
 
+      <!-- ======= Projects Section ======= -->
+      <section id="projects" class="works clearfix">
+        <div class="container">
+          <div class="section-title">
+            <h2>Research Interests</h2>
+          </div>
+          <ul class="project-tabs">
+            <li class="active" data-filter="all">All Projects</li>
+            <li data-filter="1">3D Human Interaction Synthesis</li>
+            <li data-filter="2">Human Motion Synthesis</li>
+            <li data-filter="3">Sign Language Prediction</li>
+          </ul>
+          <div class="row project-grid">
+            <!-- 3D Human Interaction Synthesis -->
+            <div class="col-lg-4 col-md-6 col-sm-12 filtr-item project-col" data-category="1">
+              <div class="item" style="position:relative; overflow:hidden; margin-bottom:32px;">
+                <a href="https://github.com/anindita127/DuetGen" target="_blank">
+                  <img src="assets/images/result_duetgen.gif" alt="DuetGen" class="project-img-rect" >
+                  <div class="overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(34,34,34,0.7);color:#fff;opacity:0;transition:opacity 0.3s;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+                    <h2 style="font-size:1.1rem;">DuetGen: Music Driven Two-Person Dance Generation via Hierarchical Masked Modeling</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 filtr-item project-col" data-category="1">
+              <div class="item" style="position:relative; overflow:hidden; margin-bottom:32px;">
+                <a href="https://github.com/anindita127/ReMoS" target="_blank">
+                  <img src="assets/images/result_remos.gif" alt="ReMoS" class="project-img-rect" >
+                  <div class="overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(34,34,34,0.7);color:#fff;opacity:0;transition:opacity 0.3s;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+                    <h2 style="font-size:1.1rem;">ReMoS: 3D Motion-Conditioned Reaction Synthesis for Two-Person Interactions</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 filtr-item project-col" data-category="1">
+              <div class="item" style="position:relative; overflow:hidden; margin-bottom:32px;">
+                <a href="https://github.com/anindita127/IMoS" target="_blank">
+                  <img src="assets/images/result_EG2023.gif" alt="IMoS" class="project-img-rect" >
+                  <div class="overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(34,34,34,0.7);color:#fff;opacity:0;transition:opacity 0.3s;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+                    <h2 style="font-size:1.1rem;">IMoS: Intent-Driven Full-Body Motion Synthesis for Human-Object Interactions</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 filtr-item project-col" data-category="2">
+              <div class="item" style="position:relative; overflow:hidden; margin-bottom:32px;">
+                <a href="https://github.com/lzhyu/SimMotionEdit" target="_blank">
+                  <img src="assets/images/SIMMotionEditing.gif" alt="SimMotionEdit" class="project-img-rect" >
+                  <div class="overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(34,34,34,0.7);color:#fff;opacity:0;transition:opacity 0.3s;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+                    <h2 style="font-size:1.1rem;">SimMotionEdit: Text-Based Human Motion Editing with Motion Similarity Prediction</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Human Motion Synthesis -->
+            <div class="col-lg-4 col-md-6 col-sm-12 filtr-item project-col" data-category="2">
+              <div class="item" style="position:relative; overflow:hidden; margin-bottom:32px;">
+                <a href="https://github.com/anindita127/Complextext2animation" target="_blank">
+                  <img src="assets/images/Text2Motion.gif" alt="Synthesis of Compositional Animations from Textual Descriptions" class="project-img-rect" >
+                  <div class="overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(34,34,34,0.7);color:#fff;opacity:0;transition:opacity 0.3s;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+                    <h2 style="font-size:1.1rem;">Synthesis of Compositional Animations from Textual Descriptions</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Sign Language Prediction -->
+            <div class="col-lg-4 col-md-6 col-sm-12 filtr-item project-col" data-category="3">
+              <div class="item" style="position:relative; overflow:hidden; margin-bottom:32px;">
+                <a href="https://link.springer.com/chapter/10.1007%2F978-981-10-3433-6_2" target="_blank">
+                  <img src="assets/images/p1.PNG" alt="Real Time Sign Language Processing System" class="project-img-rect" >
+                  <div class="overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(34,34,34,0.7);color:#fff;opacity:0;transition:opacity 0.3s;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+                    <h2 style="font-size:1.1rem;">Real Time Sign Language Processing System</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              document.querySelectorAll('.project-tabs li').forEach(tab => {
+                tab.addEventListener('click', function() {
+                  // Tab UI
+                  document.querySelectorAll('.project-tabs li').forEach(t => t.classList.remove('active'));
+                  this.classList.add('active');
+                  // Filtering logic
+                  const filter = this.getAttribute('data-filter');
+                  document.querySelectorAll('.filtr-item').forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                      item.style.display = '';
+                    } else {
+                      item.style.display = 'none';
+                    }
+                  });
+                });
+              });
+              // Trigger default filter on page load
+              document.querySelector('.project-tabs li.active').click();
+            });
+          </script>
+        </div>
+      </section><!-- End Projects Section -->
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Background Section: Education, Experience, Talks, Achievements, Services ======= -->
+    <section id="background">
+      <div class="container">
+        <div class="section-title">
+          <h2>Background</h2>
+        </div>
+      </div>
       <!-- ======= Education and Experience Section ======= -->
       <section id="ed-exp" class="resume">
         <div class="container">
@@ -265,7 +380,7 @@
         <div class="container">
           <div class="row">
             <!-- Invited Talks Column -->
-            <div class="col-lg-6" data-aos="fade-up">
+            <div class="col-lg-4" data-aos="fade-up">
               <div class="section-title">
                 <h3>Invited Talks</h3>
               </div>
@@ -286,7 +401,7 @@
             </div>
 
             <!-- Achievements Column -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
               <div class="section-title">
                 <h3>Achievements</h3>
               </div>
@@ -304,7 +419,6 @@
                   <strong>Best Master's Project Award</strong>
                   <br><em> St. Xavier's College, Kolkata, India </em>
                   <br><em>2016</em>
-                  <!-- <br>From St. Xavier's College, Kolkata, India, for the project "Real-Time Sign Language Processing System" -->
                 </p>
               </div>
               <div class="icon-box" data-aos="fade-up">
@@ -321,173 +435,63 @@
                   <strong>Vidyasagar Scholarship</strong>
                   <br><em>Government of West Bengal, India</em>
                   <br><em> 2009</em>
-                 
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section><!-- End Invited Talks and Achievements Section -->
 
-    </section><!-- End About Section -->
-
-    <!-- ======= Projects Section ======= -->
-    <section id="projects" class="works clearfix">
-      <div class="container">
-        <div class="section-title">
-          <h2>Research Interests</h2>
-        </div>
-        <ul class="project-tabs">
-          <li class="active" data-filter="all">All Projects</li>
-          <li data-filter="1">3D Human Interaction Synthesis</li>
-          <li data-filter="2">Human Motion Synthesis</li>
-          <li data-filter="3">Sign Language Prediction</li>
-        </ul>
-        <div class="row project-grid" style="gap: 32px 0;">
-          <!-- 3D Human Interaction Synthesis -->
-          <div class="col-lg-4 col-md-6 col-sm-12 filtr-item project-col" data-category="1">
-            <div class="item" style="position:relative; overflow:hidden; margin-bottom:32px;">
-              <a href="https://github.com/anindita127/DuetGen" target="_blank">
-                <img src="assets/images/result_duetgen.gif" alt="DuetGen" class="project-img-rect" >
-                <div class="overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(34,34,34,0.7);color:#fff;opacity:0;transition:opacity 0.3s;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
-                  <h2 style="font-size:1.1rem;">DuetGen: Music Driven Two-Person Dance Generation via Hierarchical Masked Modeling</h2>
+            <!-- Services Column -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="section-title">
+                <h3>Services</h3>
+              </div>
+              <div class="icon-box" data-aos="fade-up" style="margin-bottom: 24px; display: flex; align-items: flex-start; gap: 8px;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: #ff6b6b; border-radius: 50%; flex-shrink: 0;"><i class="bx bxs-book-content" style="color: #fff; font-size: 2.7em;"></i></span>
+                <div class="description" style="padding-left: 0;">
+                  <strong>Conference Program Committee and Reviewer</strong>
+                  <div><em>AAAI</em></div>
+                  <div><em>ACM Multimedia</em></div>
+                  <div><em>ACM SIGGRAPH</em></div>
+                  <div><em>ACM SIGGRAPH Asia</em></div>
+                  <div><em>CVPR</em></div>
+                  <div><em>ECCV</em></div>
+                  <div><em>Eurographics</em></div>
+                  <div><em>IEEE VR</em></div>
+                  <div><em>Pacific Graphics</em></div>
+                  <div><em>UBICOMP ISWC</em></div>
                 </div>
-              </a>
+              </div>
+              <div class="icon-box" data-aos="fade-up" style="margin-bottom: 24px; display: flex; align-items: flex-start; gap: 8px;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: #ff6b6b; border-radius: 50%; flex-shrink: 0;"><i class="bx bxs-book-content" style="color: #fff; font-size: 2.7em;"></i></span>
+                <div class="description" style="padding-left: 0;">
+                  <strong>Journal Reviewer</strong>
+                  <div><em>Computer Graphics Forum </em></div>
+                  <div><em>IEEE Transactions on Multimedia</em></div>
+                </div>
+              </div>
+              <div class="icon-box" data-aos="fade-up" style="margin-bottom: 0; display: flex; align-items: flex-start; gap: 8px;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: #ff6b6b; border-radius: 50%; flex-shrink: 0;"><i class="bx bxs-book-content" style="color: #fff; font-size: 2.7em;"></i></span>
+                <div class="description" style="padding-left: 0;">
+                  <strong>Conference Volunteer</strong>
+                  <div><em>IEEE PES Asia-Pacific Power and Energy Engineering Conference (APPEEC)</em></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 filtr-item project-col" data-category="1">
-            <div class="item" style="position:relative; overflow:hidden; margin-bottom:32px;">
-              <a href="https://github.com/anindita127/ReMoS" target="_blank">
-                <img src="assets/images/result_remos.gif" alt="ReMoS" class="project-img-rect" >
-                <div class="overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(34,34,34,0.7);color:#fff;opacity:0;transition:opacity 0.3s;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
-                  <h2 style="font-size:1.1rem;">ReMoS: 3D Motion-Conditioned Reaction Synthesis for Two-Person Interactions</h2>
-                </div>
-              </a>
-            </div>
+          <!-- Students Advised Subsection -->
+          <div class="section-title" style="margin-top: 36px;">
+            <h3>Students Advised</h3>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 filtr-item project-col" data-category="1">
-            <div class="item" style="position:relative; overflow:hidden; margin-bottom:32px;">
-              <a href="https://github.com/anindita127/IMoS" target="_blank">
-                <img src="assets/images/result_EG2023.gif" alt="IMoS" class="project-img-rect" >
-                <div class="overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(34,34,34,0.7);color:#fff;opacity:0;transition:opacity 0.3s;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
-                  <h2 style="font-size:1.1rem;">IMoS: Intent-Driven Full-Body Motion Synthesis for Human-Object Interactions</h2>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 filtr-item project-col" data-category="2">
-            <div class="item" style="position:relative; overflow:hidden; margin-bottom:32px;">
-              <a href="https://github.com/lzhyu/SimMotionEdit" target="_blank">
-                <img src="assets/images/SIMMotionEditing.gif" alt="SimMotionEdit" class="project-img-rect" >
-                <div class="overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(34,34,34,0.7);color:#fff;opacity:0;transition:opacity 0.3s;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
-                  <h2 style="font-size:1.1rem;">SimMotionEdit: Text-Based Human Motion Editing with Motion Similarity Prediction</h2>
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- Human Motion Synthesis -->
-          <div class="col-lg-4 col-md-6 col-sm-12 filtr-item project-col" data-category="2">
-            <div class="item" style="position:relative; overflow:hidden; margin-bottom:32px;">
-              <a href="https://github.com/anindita127/Complextext2animation" target="_blank">
-                <img src="assets/images/Text2Motion.gif" alt="Synthesis of Compositional Animations from Textual Descriptions" class="project-img-rect" >
-                <div class="overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(34,34,34,0.7);color:#fff;opacity:0;transition:opacity 0.3s;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
-                  <h2 style="font-size:1.1rem;">Synthesis of Compositional Animations from Textual Descriptions</h2>
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- Sign Language Prediction -->
-          <div class="col-lg-4 col-md-6 col-sm-12 filtr-item project-col" data-category="3">
-            <div class="item" style="position:relative; overflow:hidden; margin-bottom:32px;">
-              <a href="https://link.springer.com/chapter/10.1007%2F978-981-10-3433-6_2" target="_blank">
-                <img src="assets/images/p1.PNG" alt="Real Time Sign Language Processing System" class="project-img-rect" >
-                <div class="overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(34,34,34,0.7);color:#fff;opacity:0;transition:opacity 0.3s;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
-                  <h2 style="font-size:1.1rem;">Real Time Sign Language Processing System</h2>
-                </div>
-              </a>
-            </div>
+          <div style="margin-bottom: 24px;">
+            <ul style="margin-top: 8px;">
+              <li>
+                <strong>Muhammad Imtiaz Ashiq (2024):</strong> "Towards Synchronized Movements: 3D Pose Forecasting for Paired Dance Motion Prediction for Overcoming Latency in VR".<br>
+                <span>Reviewers: Prof. Dr. Philipp Slusallek, Prof. Dr. Antonio Krüger</span>
+              </li>
+            </ul>
           </div>
         </div>
-      <style>
-        .project-tabs {
-          display: flex;
-          gap: 32px;
-          list-style: none;
-          padding: 0;
-          margin: 0 0 32px 0;
-          font-size: 0.95rem;
-          font-weight: 500;
-        }
-        .project-tabs li {
-          cursor: pointer;
-          color: #888;
-          border-bottom: 2px solid transparent;
-          padding-bottom: 6px;
-          transition: color 0.2s, border-bottom 0.2s;
-        }
-        .project-tabs li.active {
-          color: #e74c6c;
-          border-bottom: 2px solid #e74c6c;
-          font-weight: 700;
-        }
-        .project-tabs li:hover {
-          color: #222;
-        }
-        .item:hover .overlay {
-          opacity: 1 !important;
-        }
-        .project-img-rect {
-          width: 220px !important;
-          height: 160px !important;
-          object-fit: cover;
-          border: 2px solid #bbb;
-          border-radius: 12px;
-          display: block;
-          margin: 0 auto;
-          background: #fff;
-        }
-        .project-col {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: flex-start;
-          margin-bottom: 32px;
-        }
-        .project-grid {
-          row-gap: 40px;
-          column-gap: 0;
-        }
-        /* Reduce font size of subsection headings under About Me */
-        #about .section-title h3 {
-          font-size: 1.1rem;
-          font-weight: 600;
-          margin-top: 24px;
-          margin-bottom: 12px;
-        }
-      </style>
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          document.querySelectorAll('.project-tabs li').forEach(tab => {
-            tab.addEventListener('click', function() {
-              // Tab UI
-              document.querySelectorAll('.project-tabs li').forEach(t => t.classList.remove('active'));
-              this.classList.add('active');
-              // Filtering logic
-              const filter = this.getAttribute('data-filter');
-              document.querySelectorAll('.filtr-item').forEach(item => {
-                if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                  item.style.display = '';
-                } else {
-                  item.style.display = 'none';
-                }
-              });
-            });
-          });
-          // Trigger default filter on page load
-          document.querySelector('.project-tabs li.active').click();
-        });
-      </script>
-    </section><!-- End Projects Section -->
+      </section><!-- End Invited Talks, Achievements, Reviewer Service Section -->
+    </section><!-- End Background Section -->
 
     <!-- ======= Bibliography Section ======= -->
     <section id="bibliography" class="portfolio section-bg">
@@ -531,6 +535,7 @@
                   
                   <a class="descriptor pub-link" href="https://arxiv.org/pdf/2311.17057.pdf" target="_blank">Paper</a>
                   <a class="descriptor pub-link" href="https://vcai.mpi-inf.mpg.de/projects/remos/" target="_blank">Project Page</a>
+                  <a class="descriptor pub-link" href="assets/images/ECCV2024_poster.jpg" target="_blank">Poster</a>
                   <br>
                 </li>
                 
@@ -548,7 +553,7 @@
                   <b>International Conference on Computer Vision (ICCV), 2021</b>
                   <span class="descriptor poster">Conference Poster</span>
                   <a class="descriptor pub-link" href="https://openaccess.thecvf.com/content/ICCV2021/papers/Ghosh_Synthesis_of_Compositional_Animations_From_Textual_Descriptions_ICCV_2021_paper.pdf" target="_blank">Paper</a>
-                  <a class="descriptor pub-link" href="https://people.mpi-inf.mpg.de/~anghosh/docs/ICCV2021_poster_pdf.pdf" target="_blank">Poster</a>
+                  <a class="descriptor pub-link" href="assets/images/ICCV_2021_poster.jpg" target="_blank">Poster</a>
                 </li>
                 <li>
                   <b>Anindita Ghosh</b>, Noshaba Cheema, Cennet Oguz, Christian Theobalt, Philipp Slusallek.
@@ -556,7 +561,7 @@
                   <b>ACM SIGGRAPH 2021</b> <br>
                   <span class="descriptor poster">Conference Poster</span>
                   <a class="descriptor pub-link" href="https://dl.acm.org/doi/abs/10.1145/3450618.3469163" target="_blank">Proceedings</a>
-                  <a class="descriptor pub-link" href="assets/images/poster.jpg" target="_blank">Poster</a>
+                  <a class="descriptor pub-link" href="assets/images/SIGGRAPH_2021_poster.jpg" target="_blank">Poster</a>
                 </li>
               </ol>
             </div>

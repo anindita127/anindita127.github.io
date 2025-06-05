@@ -624,6 +624,7 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  line-height: 24px;
 }
 
 .bodysec .title a {
@@ -637,7 +638,7 @@ section {
 .bodysec .description {
   margin-left: 80px;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .date-small {
@@ -959,4 +960,240 @@ section {
     width: auto;
     padding-right: 20px;
   }
+}
+
+/* Latest News Section Enhancements */
+#news.section-bg {
+  background: #f8fafd !important;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(34, 34, 34, 0.07);
+  padding: 32px 0 32px 0;
+  margin-bottom: 32px;
+}
+
+#news .count-box {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(34, 34, 34, 0.08);
+  padding: 24px 18px;
+  margin: 0 12px 24px 12px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#news .count-box:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(34, 34, 34, 0.13);
+}
+
+#news .count-box i {
+  font-size: 2.2rem;
+  color: #e74c6c;
+  margin-bottom: 12px;
+}
+
+#news .count-box strong {
+  font-size: 1.1rem;
+  color: #222;
+  display: block;
+  margin-bottom: 4px;
+}
+
+#news .count-box p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0;
+}
+
+#news .section-title h3 {
+  border-left: 4px solid #e74c6c;
+  padding-left: 12px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+}
+
+/* News Card (Sticky Note) Styles with Tilt */
+.news-card {
+  background: #fde7e7;
+  border-radius: 10px;
+  padding: 12px 16px;
+  width: 200px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: 'Inter', sans-serif;
+  transform: rotate(-2deg);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.news-card:nth-child(2) {
+  transform: rotate(1.5deg);
+}
+.news-card:nth-child(3) {
+  transform: rotate(-1deg);
+}
+.news-card:hover {
+  transform: rotate(0deg) translateY(-5px);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.15);
+}
+.news-date {
+  font-size: 0.85rem;
+  color: #777;
+  font-weight: bold;
+}
+.news-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+  font-family: 'Segoe Print', 'Comic Sans MS', cursive, sans-serif;
+}
+.news-note {
+  font-size: 0.8rem;
+  color: #444;
+  font-family: 'Segoe Print', 'Comic Sans MS', cursive, sans-serif;
+}
+.sticky-note.news-card {
+  border-radius: 4px;
+  transform: none;
+}
+/* ======= Latest News Section - Sticky Notes with Tilt ======= */
+
+.latest-news-notes {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.latest-news-notes .news-card {
+  background: #fde7e7; /* light pink - matches your site */
+  border-radius: 10px;
+  padding: 12px 16px;
+  width: 200px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: 'Inter', sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.latest-news-notes .news-card:nth-child(1) {
+  transform: rotate(-2deg);
+}
+
+.latest-news-notes .news-card:nth-child(2) {
+  transform: rotate(1.5deg);
+}
+
+.latest-news-notes .news-card:nth-child(3) {
+  transform: rotate(-1deg);
+}
+
+.latest-news-notes .news-card:hover {
+  transform: rotate(0deg) translateY(-5px);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.15);
+}
+
+.latest-news-notes .news-date {
+  font-size: 0.85rem;
+  color: #b03a3a;
+  font-weight: bold;
+  background: #ffe5e5;
+  border-radius: 999px;
+  padding: 2px 14px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.latest-news-notes .news-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+  font-family: 'Segoe Print', 'Comic Sans MS', cursive, sans-serif;
+}
+
+.latest-news-notes .news-note {
+  font-size: 0.8rem;
+  color: #444;
+  font-family: 'Segoe Print', 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Project Tabs Styles */
+.project-tabs {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.project-tabs li {
+  cursor: pointer;
+  color: #888;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 6px;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+.project-tabs li.active {
+  color: #e74c6c;
+  border-bottom: 2px solid #e74c6c;
+  font-weight: 700;
+}
+.project-tabs li:hover {
+  color: #222;
+}
+.project-col:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Project Grid and Image Styles - Cleaned and Unified */
+.project-img-rect {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;   /* REMOVE border from img! */
+  display: block;
+}
+.project-col {
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 220px;
+  height: 160px;
+  box-sizing: border-box;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  /* overflow-x: auto; */
+  justify-content: flex-start;
+}
+.item:hover .overlay {
+  opacity: 1 !important;
+}
+
+/* Reduce font size of subsection headings under About Me */
+#about .section-title h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.project-grid .overlay h2 {
+  font-size: 0.95rem !important;
 }
