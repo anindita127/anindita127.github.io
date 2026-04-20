@@ -35,10 +35,16 @@
 
 <!--  <div id="se-pre-con" class="se-pre-con"></div>-->
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- ======= Mobile / tablet: visible profile strip + menu (opens left panel) ======= -->
+  <div class="mobile-top-bar d-flex d-xl-none align-items-center justify-content-between gap-2" aria-hidden="false">
+    <div class="d-flex align-items-center gap-2 min-w-0 flex-grow-1">
+      <img src="assets/images/pp.png" alt="Anindita Ghosh" class="mobile-top-bar-avatar" width="40" height="40">
+      <span class="mobile-top-bar-name text-light fw-semibold text-truncate">Anindita Ghosh</span>
+    </div>
+    <i class="bi bi-list mobile-nav-toggle flex-shrink-0" role="button" tabindex="0" aria-label="Open menu"></i>
+  </div>
 
-  <!-- ======= Header ======= -->
+  <!-- ======= Header: full profile + nav (drawer on narrow screens when menu is opened) ======= -->
   <header id="header">
     <div class="d-flex flex-column">
 

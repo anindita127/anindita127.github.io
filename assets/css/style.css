@@ -176,6 +176,46 @@ a:hover {
   #main {
     margin-left: 0;
     padding-left: 0;
+    padding-top: 56px; /* space for fixed mobile-top-bar */
+  }
+
+  /* Always-visible identity row on phones / tablets (sidebar is drawer) */
+  .mobile-top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9996;
+    min-height: 56px;
+    padding: 8px 12px;
+    background: var(--header-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+  }
+
+  .mobile-top-bar-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--header-color-light);
+    flex-shrink: 0;
+  }
+
+  .mobile-top-bar-name {
+    font-size: 1rem;
+  }
+
+  /* Menu control lives in the bar instead of floating alone */
+  .mobile-top-bar .mobile-nav-toggle {
+    position: relative;
+    right: auto;
+    top: auto;
+    z-index: 9997;
+  }
+
+  .mobile-nav-active #header {
+    z-index: 10000;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.2);
   }
 }
 
