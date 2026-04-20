@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
   <title>Anindita Ghosh</title>
   <meta content="" name="description">
@@ -35,64 +35,36 @@
 
 <!--  <div id="se-pre-con" class="se-pre-con"></div>-->
 
-  <!-- ======= Mobile / tablet: visible profile strip + menu (opens left panel) ======= -->
-  <div class="mobile-top-bar d-flex d-xl-none align-items-center justify-content-between gap-2" aria-hidden="false">
-    <div class="d-flex align-items-center gap-2 min-w-0 flex-grow-1">
-      <img src="assets/images/pp.png" alt="Anindita Ghosh" class="mobile-top-bar-avatar" width="40" height="40">
-      <span class="mobile-top-bar-name text-light fw-semibold text-truncate">Anindita Ghosh</span>
-    </div>
-    <i class="bi bi-list mobile-nav-toggle flex-shrink-0" role="button" tabindex="0" aria-label="Open menu"></i>
-  </div>
-
-  <!-- ======= Header: full profile + nav (drawer on narrow screens when menu is opened) ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/images/pp.png" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Anindita Ghosh</a></h1>
-        <div class="mt-3 text-light text-center">
-          <small>
-            <div style="margin-bottom: 14px;">Ph.D. Candidate</div>
-            <div>Computer Science</div>
-          </small>
-        </div>
-        <div class="social-links mt-3 text-center">
-          <a href="https://github.com/anindita127" target="_blank" class="github">
-            <i class="bx bxl-github"></i>
-          </a>
-          <a href="https://scholar.google.com/citations?user=XsxguG8AAAAJ&hl=en" target="_blank" class="google-scholar">
-            <i class="ai ai-google-scholar"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/anindita-ghosh127/" target="_blank" class="linkedin">
-            <i class="bx bxl-linkedin"></i>
-          </a>
+  <!-- ======= Top navigation (replaces fixed sidebar) ======= -->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light site-navbar">
+      <div class="container">
+        <a class="navbar-brand navbar-brand-home py-0" href="index.html" aria-label="Home">
+          <i class="bi bi-house-door" aria-hidden="true"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
+          <ul class="navbar-nav ms-auto gap-lg-1">
+            <li class="nav-item">
+              <a href="#about" class="nav-link scrollTo">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link scrollTo">Research Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#background" class="nav-link scrollTo">Background</a>
+            </li>
+            <li class="nav-item">
+              <a href="#bibliography" class="nav-link scrollTo">Publications</a>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li>
-            <a href="#about" class="nav-link scrollTo"><i class="bx bx-user"></i><span>About Me</span></a>
-          </li>
-          <li>
-            <a href="#projects" class="nav-link scrollTo">
-              <i class="bx bx-book-content"></i><span>Research Projects</span>
-            </a>
-          </li>
-          <li>
-            <a href="#background" class="nav-link scrollTo"><i class="bx bx-layer"></i><span>Background</span></a>
-          </li>
-          <li>
-            <a href="#bibliography" class="nav-link scrollTo"><i class="bx bx-file"></i><span>Selected Publications</span></a>
-          </li>
-          <li>
-            <a href="#contact" class="nav-link scrollTo"><i class="bx bx-mail-send"></i><span>Contact</span></a>
-          </li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
+    </nav>
+  </header>
 
   <main id="main">
 
@@ -100,32 +72,59 @@
     <section id="about" class="about">
       <div class="container">
 
-        <div class="section-title">
-          <h2>About Me</h2>
-
-<p>
-  I am a Ph.D. candidate in Computer Science at
-  <a href="https://www.graduateschool-computerscience.de/" target="_blank" rel="noopener noreferrer">
-  Saarland University</a> associated with the <a href="https://vcai.mpi-inf.mpg.de/" target="_blank" rel="noopener noreferrer">Visual Computing and Artificial Intelligence</a> department at the <a href="https://www.mpi-inf.mpg.de/" target="_blank" rel="noopener noreferrer">Max-Planck-Institute for Informatics</a>.
-</p>
-
-<p>
-  I work at the intersection of Computer Vision, Computer Graphics, and Multimodal Learning, developing
-  <strong>generative models for human-centric content</strong>.
-</p>
-
-<p><br>
-  My research experience spans 3D synthesis, including
-human-human and human-scene interactions, spatiotemporal perception and generative world modeling,
-video and temporal synthesis, and multimodal understanding.</p>
-
-<p><br>
-  When I am not coding or building models, you will find me exploring the latest trends in AI 🤖,
-  making delicious desserts 🍰, or traveling to new places ✈️.  
-</p>
-
-
+        <div class="row align-items-start about-hero g-4 g-lg-5 pb-2">
+          <div class="col-lg-7 order-2 order-lg-1">
+            <div class="section-title about-me-title">
+              <h2><span class="about-heading-first">About</span> Me</h2>
+            </div>
+            <div class="about-intro">
+              <p class="about-lead">
+                I am a Ph.D. candidate in Computer Science at
+                <a href="https://www.graduateschool-computerscience.de/" target="_blank" rel="noopener noreferrer">
+                  Saarland University</a> associated with the <a href="https://vcai.mpi-inf.mpg.de/" target="_blank" rel="noopener noreferrer">Visual Computing and Artificial Intelligence</a> department at the <a href="https://www.mpi-inf.mpg.de/" target="_blank" rel="noopener noreferrer">Max-Planck-Institute for Informatics</a>.
+              </p>
+              <p>
+                I work at the intersection of Computer Vision, Computer Graphics, and Multimodal Learning, developing
+                <strong>generative models for human-centric content</strong>.
+              </p>
+              <p>
+                My research experience spans 3D synthesis, including
+                human-human and human-scene interactions, spatiotemporal perception and generative world modeling,
+                video and temporal synthesis, and multimodal understanding.
+              </p>
+              <p>
+                When I am not coding or building models, you will find me exploring the latest trends in AI 🤖,
+                making delicious desserts 🍰, or traveling to new places ✈️.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 about-profile-col">
+            <div class="about-profile-stack">
+              <div class="about-profile-wrap">
+                <img src="assets/images/pp.png" class="about-profile-img" alt="Portrait of Anindita Ghosh" loading="lazy">
+              </div>
+              <p class="about-name-under-photo">Anindita Ghosh</p>
+              <p class="about-role-under-photo text-muted">
+                Ph.D. Candidate in Computer Science <br> Saarland University
+              </p>
+              <div class="about-social-icons d-flex justify-content-center flex-wrap gap-2 mt-3" aria-label="Email and profiles">
+                <a href="mailto:anindita127@gmail.com" class="about-social-icon" aria-label="Email" title="Email">
+                  <i class="bi bi-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/anindita-ghosh127/" class="about-social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=XsxguG8AAAAJ&hl=en" class="about-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
+                  <i class="ai ai-google-scholar"></i>
+                </a>
+                <a href="https://github.com/anindita127" class="about-social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
 
       <!-- ======= Latest News & Highlights ======= -->
@@ -490,29 +489,6 @@ video and temporal synthesis, and multimodal understanding.</p>
       <!-- End Preprints Section -->
     </section>
     <!-- End Bibliography Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="facts">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row no-gutters">
-          <div class="col-lg-6 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="bi bi-envelope"></i>
-              <p>
-                anindita127[AT]gmail[DOT]com
-              </p>
-            </div>
-          </div>
-
-          
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 

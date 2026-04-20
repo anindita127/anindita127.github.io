@@ -68,12 +68,16 @@
   onscroll(document, navBarLinksActive)
 
   /**
-   * Scrolls to an element with header offset
+   * Scrolls to an element with sticky header offset
    */
   const scrollTo = (el) => {
-    let elementPos = select(el).offsetTop
+    const element = select(el)
+    if (!element) return
+    const header = select('.site-header')
+    const h = header ? header.getBoundingClientRect().height : 0
+    const y = element.getBoundingClientRect().top + window.pageYOffset - h - 12
     window.scrollTo({
-      top: elementPos,
+      top: Math.max(0, y),
       behavior: 'smooth'
     })
   }
@@ -95,27 +99,15 @@
   }
 
   /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('body').classList.toggle('mobile-nav-active')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
-
-  /**
    * Scroll with offset on links with a class name .scrollTo
    */
   on('click', '.scrollTo', function(e) {
     if (select(this.hash)) {
       e.preventDefault()
 
-      let body = select('body')
-      if (body.classList.contains('mobile-nav-active')) {
-        body.classList.remove('mobile-nav-active')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+      let navCollapse = select('.navbar-collapse')
+      if (navCollapse && navCollapse.classList.contains('show')) {
+        navCollapse.classList.remove('show')
       }
       scrollTo(this.hash)
     }
